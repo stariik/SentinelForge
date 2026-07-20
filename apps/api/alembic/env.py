@@ -12,9 +12,9 @@ from __future__ import annotations
 from logging.config import fileConfig
 from typing import Any
 
-from alembic import context
 from sqlalchemy import engine_from_config, pool
 
+from alembic import context
 from sentinelforge.core.config import get_settings
 from sentinelforge.core.db import GUID, JSONBType
 from sentinelforge.models import Base

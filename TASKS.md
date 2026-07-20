@@ -21,27 +21,27 @@ Status: `[ ]` todo · `[~]` in progress · `[x]` done
 - [x] API contract → `docs/api.md`
 - [x] Security risk register → `docs/threat-model.md`
 
-## Phase 1 — Backend foundation  `[ ]`
+## Phase 1 — Backend foundation  `[x]`
 
-- [ ] `pyproject.toml` with pinned dependencies; ruff + mypy config
-- [ ] Settings via `pydantic-settings`; refuse placeholder `SECRET_KEY` outside dev
-- [ ] `GUID` / `JSONBType` portability decorators (PostgreSQL ↔ SQLite)
-- [ ] All 12 SQLAlchemy models with indexes and constraints
-- [ ] Alembic environment + initial migration
-- [ ] Password hashing (bcrypt over SHA-256 pre-hash), JWT access/refresh, `jti` denylist
-- [ ] RBAC dependencies (`admin` / `analyst`), default-deny
-- [ ] Auth rate limiting + account lockout
-- [ ] Audit log service
-- [ ] Verify: ruff, mypy, pytest
+- [x] `pyproject.toml` with pinned dependencies; ruff + mypy config
+- [x] Settings via `pydantic-settings`; refuse placeholder `SECRET_KEY` outside dev
+- [x] `GUID` / `JSONBType` portability decorators (PostgreSQL ↔ SQLite)
+- [x] All 12 SQLAlchemy models with indexes and constraints
+- [x] Alembic environment + initial migration
+- [x] Password hashing (bcrypt over SHA-256 pre-hash), JWT access/refresh, `jti` denylist
+- [x] RBAC dependencies (`admin` / `analyst`), default-deny
+- [x] Auth rate limiting + account lockout
+- [x] Audit log service
+- [x] Verify: ruff, mypy, pytest
 
-## Phase 2 — Sigma core  `[ ]`
+## Phase 2 — Sigma core  `[x]`
 
-- [ ] Safe YAML loading (bounded size/depth, `safe_load` only)
-- [ ] Rule parsing → metadata extraction (title, id, status, level, logsource, tags, refs, FPs)
-- [ ] Validation via pySigma's 31 core validators + SentinelForge checks
-- [ ] Explainable quality score (9 weighted criteria, per-criterion reasons)
-- [ ] Sigma → query conversion, in-process (no subprocess)
-- [ ] Verify: ruff, mypy, pytest
+- [x] Safe YAML loading (bounded size/depth, `safe_load` only)
+- [x] Rule parsing → metadata extraction (title, id, status, level, logsource, tags, refs, FPs)
+- [x] Validation via pySigma's 31 core validators + SentinelForge checks
+- [x] Explainable quality score (9 weighted criteria, per-criterion reasons)
+- [x] Sigma → query conversion, in-process (no subprocess)
+- [x] Verify: ruff, mypy, pytest
 
 ## Phase 3 — Rule management  `[ ]`
 
