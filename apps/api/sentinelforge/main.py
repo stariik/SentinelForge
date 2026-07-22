@@ -10,7 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 from sentinelforge import __version__
-from sentinelforge.api.routes import auth, users
+from sentinelforge.api.routes import auth, rules, users
 from sentinelforge.core.config import get_settings
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)-8s %(name)s: %(message)s")
@@ -68,6 +68,7 @@ def create_app() -> FastAPI:
     prefix = settings.api_v1_prefix
     app.include_router(auth.router, prefix=prefix)
     app.include_router(users.router, prefix=prefix)
+    app.include_router(rules.router, prefix=prefix)
 
     @app.get("/health", tags=["meta"])
     def health() -> dict[str, str]:
