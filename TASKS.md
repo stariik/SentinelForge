@@ -143,11 +143,11 @@ Status: `[ ]` todo · `[~]` in progress · `[x]` done
 - [ ] Screenshots section
 - [ ] Security limitations documented
 
-## Phase 13 — Publish  `[ ]`
+## Phase 13 — Publish  `[x]`
 
 - [x] `.gitignore`, `LICENSE`, `.env.example`
 - [x] Commit history
-- [ ] Create GitHub repository and push
+- [x] Create GitHub repository and push
 
 ---
 
