@@ -18,7 +18,7 @@ Status: `[ ]` todo · `[~]` in progress · `[x]` done
 - [x] `TASKS.md`
 - [x] Bundle versioned ATT&CK cache (v19.1 · 15 tactics · 697 techniques) + `scripts/refresh_attack.py`
 - [x] Database schema contract → `docs/database.md`
-- [x] API contract → `docs/api.md`
+- [x] API contract → generated OpenAPI at `/openapi.json` and `/docs`
 - [x] Security risk register → `docs/threat-model.md`
 
 ## Phase 1 — Backend foundation  `[x]`
@@ -43,17 +43,17 @@ Status: `[ ]` todo · `[~]` in progress · `[x]` done
 - [x] Sigma → query conversion, in-process (no subprocess)
 - [x] Verify: ruff, mypy, pytest
 
-## Phase 3 — Rule management  `[ ]`
+## Phase 3 — Rule management  `[x]`
 
-- [ ] CRUD + duplicate + archive + hard delete
-- [ ] Immutable version history on every content change
-- [ ] Unified diff between any two versions
-- [ ] Restore a previous version (as a new version — history is never rewritten)
-- [ ] Single-file YAML import
-- [ ] ZIP import: traversal, symlink, entry-count, size and zip-bomb defences
-- [ ] YAML export (single + bulk)
-- [ ] Search/filter: title, status, severity, logsource, author, tags, technique
-- [ ] Verify: ruff, mypy, pytest
+- [x] CRUD + duplicate + archive + hard delete
+- [x] Immutable version history on every content change
+- [x] Unified diff between any two versions
+- [x] Restore a previous version (as a new version — history is never rewritten)
+- [x] Single-file YAML import
+- [x] ZIP import: traversal, symlink, entry-count, size and zip-bomb defences
+- [x] YAML export (single + bulk)
+- [x] Search/filter: title, status, severity, logsource, author, tags, technique
+- [x] Verify: ruff, mypy, pytest
 
 ## Phase 4 — Ingestion & normalization  `[ ]`
 
@@ -137,16 +137,16 @@ Status: `[ ]` todo · `[~]` in progress · `[x]` done
 ## Phase 12 — Packaging & docs  `[ ]`
 
 - [ ] Dockerfiles + `docker-compose.yml` (PostgreSQL 16)
-- [ ] GitHub Actions: lint, typecheck, test, build
-- [ ] `README.md`
+- [x] GitHub Actions: backend lint, format, typecheck, and tests
+- [x] `README.md`
 - [ ] `docs/`: threat model, database, API, walkthrough, roadmap, portfolio, interview notes
 - [ ] Screenshots section
 - [ ] Security limitations documented
 
 ## Phase 13 — Publish  `[ ]`
 
-- [ ] `.gitignore`, `LICENSE`, `.env.example`
-- [ ] Commit history
+- [x] `.gitignore`, `LICENSE`, `.env.example`
+- [x] Commit history
 - [ ] Create GitHub repository and push
 
 ---
