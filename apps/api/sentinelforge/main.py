@@ -17,10 +17,11 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)-8s %(na
 logger = logging.getLogger(__name__)
 
 DESCRIPTION = """
-**SentinelForge** is a defensive detection-engineering and incident-replay platform.
+**SentinelForge** is a defensive Sigma rule-management and detection-engineering API.
 
-Author, validate, score, and test Sigma detection rules against normalized security
-event datasets; replay incidents on a timeline; and measure MITRE ATT&CK coverage.
+Author, validate, score, version, import, and export Sigma detection rules while mapping
+them to MITRE ATT&CK. Event testing, incident replay, and coverage views are planned
+capabilities and are not exposed by the current API.
 
 This API is read/write over data the operator supplies. It performs no collection,
 scanning, or remote execution of any kind.

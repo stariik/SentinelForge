@@ -67,6 +67,16 @@ SQLite.
 For the longer design rationale, data flows, and planned detection engine, read
 [ARCHITECTURE.md](ARCHITECTURE.md).
 
+## Screenshots
+
+### Interactive API explorer
+
+![SentinelForge Swagger UI showing authentication, user, and detection-rule endpoints](docs/images/swagger-api.png)
+
+### Generated API reference
+
+![SentinelForge ReDoc reference showing the login contract and response schemas](docs/images/redoc-api.png)
+
 ## Quick start
 
 Requirements:
